@@ -43,6 +43,7 @@ public class AirlineBookings {
                 return;
             }
         }
+        throw new IllegalArgumentException("Booking not found with ID: " + bookingID);
     }
 
     public static AirlineBookings getBookingByID(int bookingID) {
@@ -51,7 +52,7 @@ public class AirlineBookings {
                 return booking;
             }
         }
-        return null;
+        throw new IllegalArgumentException("Booking not found with ID: " + bookingID);
     }
 
     @Override

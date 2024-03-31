@@ -67,7 +67,7 @@ public class User {
                 return user;
             }
         }
-        return null;
+        throw new IllegalArgumentException("User not found with ID: " + userID);
     }
 
     @Override
