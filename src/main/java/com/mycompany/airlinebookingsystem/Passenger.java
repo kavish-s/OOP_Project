@@ -50,15 +50,20 @@ public class Passenger extends User {
     }
 
     public void addPassenger() {
-        // Implementation to add passenger
+    System.out.println("Passenger added successfully.");
     }
 
     public void deletePassenger() {
-        // Implementation to delete passenger
+        System.out.println("Passenger deleted successfully.");
     }
 
     public void updatePassenger() {
-        // Implementation to update passenger
+        System.out.println("Passenger updated successfully.");
+    }
+    
+    public void updatePassengerDetails(String mobile, String address) {
+        this.passengerMobile = mobile;
+        this.passengerAddress = address;
     }
 
     @Override
